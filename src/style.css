@@ -1,0 +1,24 @@
+:root {
+
+    /* Primary color: */
+    --primary-color: purple;
+    /* Secondary color */
+    --secondary-color: blue;
+    /* Attention color */
+    --attention-color: red;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+  }
+
+  h1, h2, h3 {
+    text-decoration: underline 0.2em var(--primary-color);
+}
+
+h3 {
+    text-decoration: underline var(--secondary-color);
+}
+
+  .prop-highlight{
+    color: var(--secondary-color)
+  }
+  
