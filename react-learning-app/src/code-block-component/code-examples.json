@@ -1,0 +1,9 @@
+{
+  "Parent": {
+    "ChildValue": "Child Value",
+    "ChildObject": {
+      "ChildObjectValueA": "Child Object Value A",
+      "ChildObjectValueB": "Child Object Value B"
+    }
+  }
+}
