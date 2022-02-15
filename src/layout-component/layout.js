@@ -13,11 +13,11 @@ function LocalComponent(props) {
       <p>I'm a stand alone component colocated with the Layout component.</p>
       <p>
         Props can be passed to me as Variables delcared in the Layout component:{" "}
-        <span className="prop-highlight">{props.variableasaprop}</span>
+        <mark>{props.variableasaprop}</mark>
       </p>
       <p>
         You can also pass an object as a prop, the prop should be say Cirlce:
-        <span className="prop-highlight">{props.objectasaprop.object1}</span>
+        <mark>{props.objectasaprop.object1}</mark>
       </p>
       <CodeBlock />
     </>
