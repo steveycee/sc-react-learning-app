@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 // import ExternalComponent from "./external-component";
 import CodeBlock from "../code-block/code-block";
 import PropsExample from "../props-example/props-example";
+import EventHandlerExample from "../event-handler-example/event-handler-example";
 
 let consoleTitleStyling = "background: #FFF; color: #123870; font-size: 1rem";
 

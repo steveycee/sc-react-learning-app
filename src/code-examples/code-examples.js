@@ -1,4 +1,4 @@
-let consoleTitleStyling = "background: #FFF; color: #123870; font-size: 1rem";
+import { consoleTitleStyling } from "console-styling.js";
 
 //---------
 // CLASSES https://www.w3schools.com/REACT/react_es6_classes.asp
@@ -293,3 +293,5 @@ const demoFunction = () => {
 };
 
 demoFunction();
+
+// export default consoleTitleStyling;
