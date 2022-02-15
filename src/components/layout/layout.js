@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 // import ExternalComponent from "./external-component";
-import CodeBlock from "../code-block-component/code-block";
-import PropsExample from "../props-example-component/props-example";
+import CodeBlock from "../code-block/code-block";
+import PropsExample from "../props-example/props-example";
 
 let consoleTitleStyling = "background: #FFF; color: #123870; font-size: 1rem";
 

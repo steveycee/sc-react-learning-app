@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
-import Layout from "./layout-component/layout";
+import Layout from "./components/layout/layout";
 
 function Page() {
   return (
