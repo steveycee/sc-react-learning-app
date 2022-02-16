@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import ExternalComponent from "./external-component";
 import CodeBlock from "../code-block/code-block";
 import PropsExample from "../props-example/props-example";
 import EventHandlerExample from "../event-handler-example/event-handler-example";
+import { ternaryExample } from "../../code-examples/ternary-example";
 
 let consoleTitleStyling = "background: #FFF; color: #123870; font-size: 1rem";
 
@@ -20,7 +20,6 @@ function LocalComponent(props) {
         You can also pass an object as a prop, the prop should be say Cirlce:
         <mark>{props.objectasaprop.object1}</mark>
       </p>
-      <CodeBlock />
     </>
   );
 }
@@ -55,7 +54,7 @@ function Layout() {
       <EventHandlerExampleComponent />
       <PassingArgumentsEventHandlerExampleComponent />
       <ReactEventObjectExample />
-      <CodeBlock />
+      {/* <CodeBlock /> */}
     </>
   );
 }
@@ -78,7 +77,16 @@ function EventHandlerExampleComponent() {
         button bellow will call a function above called shoot which will print
         to the console.
       </p>
-      <button onClick={shoot}>Press me!</button>
+      <div>
+        <button onClick={shoot}>
+          Press me, I'm an internal function to this component!
+        </button>
+      </div>
+      <div>
+        <button onClick={ternaryExample}>
+          Press me, I'm an external function (an example of a Ternary)!
+        </button>
+      </div>
     </>
   );
 }

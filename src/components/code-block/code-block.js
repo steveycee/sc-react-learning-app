@@ -1,14 +1,13 @@
 import "./code-block.css";
-// import { Parent } from "./code-examples.json";
+
+// const ternaryExample = require("!!raw-loader!../../code-examples/ternary-example.js");
 
 function CodeBlock(props) {
   return (
     <>
       <div>
         <pre>
-          <code>
-            <p>Test</p>
-          </code>
+          <code>{/* <p>{ternaryExample.tostring()}</p> */}</code>
         </pre>
       </div>
     </>

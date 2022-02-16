@@ -1,11 +1,12 @@
-import { consoleTitleStyling } from "console-styling.js";
+// import { consoleTitleStyling } from "console-styling.js";
 
-const ternaryExample = (value) => {
+export const ternaryExample = (value) => {
+  console.log("%c Ternary Example Code " /* consoleTitleStyling */);
+
   value >= 5
     ? console.log("The value is five or greater.")
     : console.log("The value is less than five.");
 };
 
-ternaryExample(3);
-console.log("%c Ternary Example Code ", consoleTitleStyling);
-console.log(ternaryExample);
+// ternaryExample(3);
+// console.log(ternaryExample);
