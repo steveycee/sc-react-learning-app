@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import CodeBlock from "../code-block/code-block";
 import PropsExample from "../props-example/props-example";
 import EventHandlerExample from "../event-handler-example/event-handler-example";
-import { ternaryExample } from "../../code-examples/ternary-example";
 
 let consoleTitleStyling = "background: #FFF; color: #123870; font-size: 1rem";
 
@@ -51,7 +49,7 @@ function Layout() {
         For more information click{" "}
         <a href="https://www.w3schools.com/REACT/react_events.asp">here</a>.
       </p>
-      <EventHandlerExampleComponent />
+      <EventHandlerExample />
       <PassingArgumentsEventHandlerExampleComponent />
       <ReactEventObjectExample />
       {/* <CodeBlock /> */}
@@ -59,37 +57,9 @@ function Layout() {
   );
 }
 
-//---------
+// ---------
 // REACT COMPONENTS https://www.w3schools.com/REACT/react_components.asp
-//---------
-
-function EventHandlerExampleComponent() {
-  const shoot = () => {
-    console.log("%cEvent handler example", consoleTitleStyling);
-    console.log("You pressed the button!");
-  };
-
-  return (
-    <>
-      <h3>Event handler example</h3>
-      <p>
-        This is a component to show you how to use an extent listenter, the
-        button bellow will call a function above called shoot which will print
-        to the console.
-      </p>
-      <div>
-        <button onClick={shoot}>
-          Press me, I'm an internal function to this component!
-        </button>
-      </div>
-      <div>
-        <button onClick={ternaryExample}>
-          Press me, I'm an external function (an example of a Ternary)!
-        </button>
-      </div>
-    </>
-  );
-}
+// ---------
 
 function PassingArgumentsEventHandlerExampleComponent() {
   const shoot = (a) => {

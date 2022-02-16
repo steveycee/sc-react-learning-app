@@ -6,8 +6,9 @@ function CodeBlock(props) {
   return (
     <>
       <div>
+        <h4>Name of the function</h4>
         <pre>
-          <code>{/* <p>{ternaryExample.tostring()}</p> */}</code>
+          <code>{/* <p>{ternaryExample.tostring()}</p> */}Example</code>
         </pre>
       </div>
     </>
