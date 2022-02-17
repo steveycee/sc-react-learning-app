@@ -21,7 +21,7 @@ function EventHandlerExample() {
           Push this button to invoke a function or method internal to this
           component.
         </p>
-        <button onClick={localFunction}>Internal function</button>
+        <button onClick={localFunction}>Internal/Local function</button>
       </div>
       <div>
         <p>

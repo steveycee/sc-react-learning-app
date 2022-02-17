@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PropsExample from "../props-example/props-example";
 import EventHandlerExample from "../event-handler-example/event-handler-example";
-
-let consoleTitleStyling = "background: #FFF; color: #123870; font-size: 1rem";
+import PassingArgumentsEventHandlerExampleComponent from "../passing-arguements-example/passing-arguements-example";
+import ReactEventObjectExample from "../react-event-object-example/react-event-object-example";
+import CodeBlock from "../code-block/code-block";
 
 function LocalComponent(props) {
   return (
@@ -18,6 +18,7 @@ function LocalComponent(props) {
         You can also pass an object as a prop, the prop should be say Cirlce:
         <mark>{props.objectasaprop.object1}</mark>
       </p>
+      <CodeBlock />
     </>
   );
 }
@@ -53,82 +54,6 @@ function Layout() {
       <PassingArgumentsEventHandlerExampleComponent />
       <ReactEventObjectExample />
       {/* <CodeBlock /> */}
-    </>
-  );
-}
-
-// ---------
-// REACT COMPONENTS https://www.w3schools.com/REACT/react_components.asp
-// ---------
-
-function PassingArgumentsEventHandlerExampleComponent() {
-  const shoot = (a) => {
-    console.log(
-      "%cPassing an Arguement in an Event handler example",
-      consoleTitleStyling
-    );
-    console.log(a);
-  };
-
-  return (
-    <>
-      <h3>Passing arguements into event handler example</h3>
-      <p>
-        This component shows how to pass an arguement instead of just calling a
-        function and having it do all the lifting. You need to not only put the
-        function in curly brackets but also use an arrow function. You should
-        see some text printed to the console.
-      </p>
-      <button
-        onClick={() =>
-          shoot(
-            "The parametre 'a' declared above has been replaced with this text."
-          )
-        }
-      >
-        Press me!
-      </button>
-    </>
-  );
-}
-
-function ReactEventObjectExample() {
-  const exampleFunction = (a, b) => {
-    console.log("%c  React Event Object " + a, consoleTitleStyling);
-    console.log(
-      "This function has two params, one is " +
-        a +
-        " and the other is designed to capture the event and is printed below"
-    );
-    console.log(b.type);
-    /*
-    'b' represents the React event that triggered the function,
-    in this case the 'click' event
-    */
-  };
-  return (
-    <>
-      <h3>React Event Object Example</h3>
-      <p>
-        This component has a method/function which takes 2 parametres, a and b.
-        When we call it it will console log out both of those parametres. To
-        read more go{" "}
-        <a href="https://www.w3schools.com/REACT/react_events.asp">here</a> and
-        read React Event Object
-      </p>
-      <button
-        onClick={(event) =>
-          exampleFunction("a (which is the first parametre)", event)
-        }
-        onFocus={(event) =>
-          exampleFunction(
-            "this is what happens when its in focus instead: ",
-            event
-          )
-        }
-      >
-        Press me!
-      </button>
     </>
   );
 }
