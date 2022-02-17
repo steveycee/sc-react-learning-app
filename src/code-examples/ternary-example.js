@@ -1,7 +1,7 @@
 import { consoleTitleStyling } from "./console-styling.js";
 
 export const ternaryExample = (value) => {
-  console.log("%c Ternary Example Code ", consoleTitleStyling);
+  console.log("%cTernary Example Code ", consoleTitleStyling);
 
   value >= 5
     ? console.log("The value is five or greater.")
