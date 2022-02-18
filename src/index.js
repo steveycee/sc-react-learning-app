@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
-import Layout from "./components/layout/layout";
+import Layout from "./pages/layout/layout";
 
-function Page() {
+function App() {
   return (
     <>
       <Layout />
@@ -11,4 +11,4 @@ function Page() {
   );
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
