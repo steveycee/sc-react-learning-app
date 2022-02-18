@@ -1,18 +1,12 @@
-import "./code-block.css";
+import CodeBlock from "../code-block/code-block";
 
-// const ternaryExample = require("!!raw-loader!../../code-examples/ternary-example.js");
-
-function CodeBlock(props) {
+function Article() {
   return (
     <>
-      <div>
-        <h4>-Name of the function-</h4>
-        <pre>
-          <code>{/* <p>{ternaryExample.tostring()}</p> */}Example</code>
-        </pre>
-      </div>
+      <h3>Article Title</h3>
+
+      <CodeBlock />
     </>
   );
 }
-
-export default CodeBlock;
+export default Article;

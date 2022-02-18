@@ -4,6 +4,7 @@ import EventHandlerExample from "../event-handler-example/event-handler-example"
 import PassingArgumentsEventHandlerExampleComponent from "../passing-arguements-example/passing-arguements-example";
 import ReactEventObjectExample from "../react-event-object-example/react-event-object-example";
 import CodeBlock from "../code-block/code-block";
+import Article from "../article/article";
 
 function LocalComponent(props) {
   return (
@@ -53,6 +54,7 @@ function Layout() {
       <EventHandlerExample />
       <PassingArgumentsEventHandlerExampleComponent />
       <ReactEventObjectExample />
+      <Article />
       {/* <CodeBlock /> */}
     </>
   );
