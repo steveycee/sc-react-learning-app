@@ -1,14 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
-// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../../pages/home/home";
+import Header from "../../components/header/header";
 import Navigation from "../../components/navigation/navigation";
+import Home from "../../pages/home/home";
 import PassingArgumentsEventHandler from "../../pages/passing-arguements/passing-arguments-event-handler";
+import EventHandlers from "../../pages/event-handlers/event-handlers";
+import Props from "../../pages/props/props";
+import ReactEventObject from "../../pages/react-event-object/react-event-object";
 
 function Layout() {
   return (
     <>
+      <Header />
       <BrowserRouter>
         <Navigation />
         <Routes>
@@ -18,13 +22,13 @@ function Layout() {
             path="passing-arguements"
             element={<PassingArgumentsEventHandler />}
           />
+          <Route path="event-handlers" element={<EventHandlers />} />
+          <Route path="props" element={<Props />} />
+          <Route path="react-event-object" element={<ReactEventObject />} />
         </Routes>
       </BrowserRouter>
-      {/* <PassingArgumentsEventHandler /> */}
     </>
   );
 }
-
-// ReactDOM.render(<Layout />, document.getElementById("root"));
 
 export default Layout;

@@ -1,4 +1,4 @@
-function PropsExample(props) {
+function Props(props) {
   return (
     <>
       {/* <p>
@@ -9,9 +9,9 @@ function PropsExample(props) {
         You can also pass an object as a prop, the prop should be Steve:
         {props.objectasaprop.object1}
       </p> */}
-      <p>Props Example placeholder</p>
+      <h2>Props Example placeholder</h2>
     </>
   );
 }
 
-export default PropsExample;
+export default Props;

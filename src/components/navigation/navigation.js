@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
@@ -11,7 +11,16 @@ function Navigation() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/props">Props</Link>
+          </li>
+          <li>
+            <Link to="/event-handlers">Event Handlers</Link>
+          </li>
+          <li>
             <Link to="/passing-arguements">Passing Arguements</Link>
+          </li>
+          <li>
+            <Link to="/react-event-object">React Event Object</Link>
           </li>
         </ul>
       </nav>

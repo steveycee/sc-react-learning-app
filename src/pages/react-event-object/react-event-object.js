@@ -1,7 +1,7 @@
 import { consoleTitleStyling } from "../../code-examples/console-styling.js";
-import CodeBlock from "../code-block/code-block";
+import CodeBlock from "../../components/code-block/code-block";
 
-function ReactEventObjectExample() {
+function ReactEventObject() {
   const exampleFunction = (a, b) => {
     console.log("%c  React Event Object " + a, consoleTitleStyling);
     console.log(
@@ -17,7 +17,7 @@ function ReactEventObjectExample() {
   };
   return (
     <>
-      <h3>React Event Object Example</h3>
+      <h2>React Event Object Example</h2>
       <p>
         This component has a method/function which takes 2 parametres, a and b.
         When we call it it will console log out both of those parametres. To
@@ -42,4 +42,4 @@ function ReactEventObjectExample() {
     </>
   );
 }
-export default ReactEventObjectExample;
+export default ReactEventObject;

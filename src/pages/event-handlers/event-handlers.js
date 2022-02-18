@@ -1,8 +1,8 @@
 import { consoleTitleStyling } from "../../code-examples/console-styling.js";
 import { ternaryExample } from "../../code-examples/ternary-example";
-import CodeBlock from "../code-block/code-block";
+import CodeBlock from "../../components/code-block/code-block";
 
-function EventHandlerExample() {
+function EventHandlers() {
   const localFunction = () => {
     console.log("%cEvent handler example", consoleTitleStyling);
     console.log("You pressed the button!");
@@ -10,7 +10,7 @@ function EventHandlerExample() {
 
   return (
     <>
-      <h3>Event handler example</h3>
+      <h2>Event handler example</h2>
       <p>
         This is a component showcasing an event listenter, the buttons bellow
         will call a function when clicked. Open the web console to see what
@@ -40,4 +40,4 @@ function EventHandlerExample() {
   );
 }
 
-export default EventHandlerExample;
+export default EventHandlers;

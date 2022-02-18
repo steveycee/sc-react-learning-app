@@ -12,7 +12,7 @@ function PassingArgumentsEventHandler() {
 
   return (
     <>
-      <h3>Passing arguements into event handler example</h3>
+      <h2>Passing arguements into event handler example</h2>
       <p>
         This component shows how to pass an arguement instead of just calling a
         function and having it do all the lifting. You need to not only put the
