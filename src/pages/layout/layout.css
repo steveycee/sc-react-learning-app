@@ -1,6 +1,9 @@
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
+body {
+  margin: 0 auto;
+  text-size-adjust: auto;
+}
+
+.container {
+  background-color: green;
+  margin: 5%;
 }

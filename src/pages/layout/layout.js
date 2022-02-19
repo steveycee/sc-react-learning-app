@@ -1,5 +1,6 @@
 import React from "react";
 // import ReactDOM from "react-dom";
+import "./layout.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../../components/header/header";
 import Navigation from "../../components/navigation/navigation";
@@ -11,7 +12,7 @@ import ReactEventObject from "../../pages/react-event-object/react-event-object"
 
 function Layout() {
   return (
-    <>
+    <div className="container">
       <Header />
       <BrowserRouter>
         <Navigation />
@@ -27,7 +28,7 @@ function Layout() {
           <Route path="react-event-object" element={<ReactEventObject />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
