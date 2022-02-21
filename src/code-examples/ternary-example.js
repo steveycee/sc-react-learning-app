@@ -8,5 +8,9 @@ export const ternaryExample = (value) => {
     : console.log("The value is less than five.");
 };
 
+export const steve = () => {
+  console.log("steve");
+};
+
 // ternaryExample(3);
 // console.log(ternaryExample);
