@@ -12,7 +12,7 @@ function CodeBlock(props) {
       <div>
         <h4>-Name of the function-</h4>
         <pre>
-          <code>{steves.default.toString()}Test</code>
+          <code>{steves.default.toString()}</code>
         </pre>
       </div>
     </>
