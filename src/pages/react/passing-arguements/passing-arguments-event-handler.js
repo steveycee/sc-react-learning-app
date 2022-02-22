@@ -1,5 +1,5 @@
-import { consoleTitleStyling } from "../../code-examples/console-styling.js";
-import CodeBlock from "../../components/code-block/code-block";
+import { consoleTitleStyling } from "../../../code-examples/console-styling.js";
+import CodeBlock from "../../../components/code-block/code-block";
 
 function PassingArgumentsEventHandler() {
   const functionExample = (a) => {

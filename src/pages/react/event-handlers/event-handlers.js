@@ -1,6 +1,6 @@
-import { consoleTitleStyling } from "../../code-examples/console-styling.js";
-import { ternaryExample } from "../../code-examples/ternary-example";
-import CodeBlock from "../../components/code-block/code-block";
+import { consoleTitleStyling } from "../../../code-examples/console-styling.js";
+import { ternaryExample } from "../../../code-examples/ternary-example";
+import CodeBlock from "../../../components/code-block/code-block";
 
 function EventHandlers() {
   const localFunction = () => {

@@ -1,9 +1,5 @@
 import "./code-block.css";
-// import "../../code-examples/ternary-example";
-
 const steves = require("!!raw-loader!../../code-examples/ternary-example");
-
-// const ternaryExample = require("!!raw-loader!../../code-examples/ternary-example.js");
 
 function CodeBlock(props) {
   // steve();

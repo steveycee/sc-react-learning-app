@@ -3,7 +3,9 @@ import "./header.css";
 function Header() {
   return (
     <div className="header">
-      <h1>SteveyLearns</h1>
+      <h1>
+        <a href="/">SteveyLearns</a>
+      </h1>
     </div>
   );
 }
