@@ -1,3 +1,10 @@
-p {
-  color: rgba(66, 66, 66, 0.137);
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-section{
+  margin-top: 0.2rem;
+  color: pink;
 }

@@ -1,15 +1,17 @@
 import React from "react";
+import "./navigation.css";
 import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <>
       <nav>
-        <p>Navigation Component</p>
         <ul>
           <ul>
             <li>
-              <Link to="/react">React Home</Link>
+              <Link to="/react" className="nav-section">
+                React Home
+              </Link>
             </li>
             <ul>
               <li>
@@ -29,7 +31,9 @@ function Navigation() {
 
           <ul>
             <li>
-              <Link to="/how-to">How To Home</Link>
+              <Link to="/how-to" className="nav-section">
+                How To Home
+              </Link>
             </li>
             <ul>
               <li>
