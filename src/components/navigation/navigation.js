@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Navigation() {
   return (
     <>
-      <nav>
+      <nav className="nav">
         <ul>
           <ul>
             <li>

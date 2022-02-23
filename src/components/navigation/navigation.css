@@ -4,7 +4,11 @@ ul {
   padding: 0;
 }
 
-.nav-section{
-  margin-top: 1.2rem;
-  color: pink;
+.nav {
+  margin-top: 1rem;
+}
+
+.nav-section {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
