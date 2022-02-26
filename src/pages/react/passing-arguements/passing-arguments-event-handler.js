@@ -1,7 +1,12 @@
+// Required to style our console logs
 import { consoleTitleStyling } from "../../../code-examples/console-styling.js";
+// Required to show this Codeblock
 import CodeBlock from "../../../components/code-block/code-block";
 
 function PassingArgumentsEventHandler() {
+  //Required for Codeblock
+  const thisFile = require("!!raw-loader!./passing-arguments-event-handler");
+
   const functionExample = (a) => {
     console.log(
       "%cPassing an Arguement in an Event handler example",
@@ -28,7 +33,10 @@ function PassingArgumentsEventHandler() {
       >
         Press me!
       </button>
-      <CodeBlock />
+      <CodeBlock
+        nameOfFunction="Passing Arguments and EventHandlers"
+        code={thisFile}
+      />
     </>
   );
 }

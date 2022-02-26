@@ -1,7 +1,11 @@
 import { consoleTitleStyling } from "../../../code-examples/console-styling.js";
+// Required to show this Codeblock
 import CodeBlock from "../../../components/code-block/code-block";
 
 function ReactEventObject() {
+  //Required for Codeblock
+  const thisFile = require("!!raw-loader!./react-event-object");
+
   const exampleFunction = (a, b) => {
     console.log("%c  React Event Object " + a, consoleTitleStyling);
     console.log(
@@ -38,7 +42,7 @@ function ReactEventObject() {
       >
         Press me!
       </button>
-      <CodeBlock />
+      <CodeBlock nameOfFunction="React Event Objects" code={thisFile} />
     </>
   );
 }

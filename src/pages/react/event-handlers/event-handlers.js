@@ -3,6 +3,8 @@ import { ternaryExample } from "../../../code-examples/ternary-example";
 import CodeBlock from "../../../components/code-block/code-block";
 
 function EventHandlers() {
+  const thisFile = require("!!raw-loader!./event-handlers");
+
   const localFunction = () => {
     console.log("%cEvent handler example", consoleTitleStyling);
     console.log("You pressed the button!");
@@ -30,7 +32,7 @@ function EventHandlers() {
         </p>
         <button onClick={ternaryExample}>External function</button>
       </div>
-      <CodeBlock />
+      <CodeBlock nameOfFunction="Event Handlers" code={thisFile} />
       <p>
         Read more{" "}
         <a href="https://www.w3schools.com/REACT/react_events.asp">here</a> on

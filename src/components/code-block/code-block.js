@@ -1,14 +1,12 @@
 import "./code-block.css";
-const steves = require("!!raw-loader!../../code-examples/ternary-example");
 
 function CodeBlock(props) {
-  // steve();
   return (
     <>
       <div>
-        <h4>-Name of the function-</h4>
+        <h4>{props.nameOfFunction}</h4>
         <pre>
-          <code>{steves.default.toString()}</code>
+          <code>{props.code.default.toString()}</code>
         </pre>
       </div>
     </>
