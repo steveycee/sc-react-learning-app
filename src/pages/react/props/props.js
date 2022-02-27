@@ -1,5 +1,5 @@
 // Required to show this Codeblock
-import CodeBlock from "../../../components/code-block/code-block";
+import StyledCodeBlock from "../../../components/code-block/styled-code-block";
 
 function PropsExample(props) {
   return (
@@ -25,7 +25,7 @@ function Props() {
     <>
       <h2>Props Example placeholder</h2>
       <PropsExample colour="Red" />
-      <CodeBlock nameOfFunction="Props" code={thisFile} />
+      <StyledCodeBlock nameOfFunction="Props" code={thisFile} />
     </>
   );
 }
