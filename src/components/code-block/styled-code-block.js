@@ -23,6 +23,16 @@ function StyledCodeBlock(props) {
           </pre>
         )}
       </Highlight>
+      <i>
+        For info on codeblock styling click{" "}
+        <a
+          href="https://www.npmjs.com/package/prism-react-renderer"
+          target="_blank"
+          rel="noreferrer"
+        >
+          here
+        </a>
+      </i>
     </div>
   );
 }
