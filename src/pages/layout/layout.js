@@ -9,6 +9,7 @@ import PassingArgumentsEventHandler from "../react/passing-arguements/passing-ar
 import EventHandlers from "../../pages/react/event-handlers/event-handlers";
 import Props from "../react/props/props";
 import ReactEventObject from "../../pages/react/react-event-object/react-event-object";
+import Conditionals from "../../pages/react/conditionals/conditionals";
 import ReactHome from "../../pages/react/react-home/react-home";
 import HowToHome from "../../pages/how-to/how-to-home/how-to-home";
 import HowToCodeBlocks from "../../pages/how-to/code-blocks/code-blocks-how-to";
@@ -33,6 +34,7 @@ function Layout() {
             <Route path="event-handlers" element={<EventHandlers />} />
             <Route path="props" element={<Props />} />
             <Route path="react-event-object" element={<ReactEventObject />} />
+            <Route path="react/conditionals" element={<Conditionals />} />
             <Route path="how-to" element={<HowToHome />} />
             <Route path="how-to/code-blocks" element={<HowToCodeBlocks />} />
           </Routes>

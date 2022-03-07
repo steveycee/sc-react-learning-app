@@ -26,6 +26,9 @@ function Navigation() {
               <li>
                 <Link to="/react-event-object">React Event Object</Link>
               </li>
+              <li>
+                <Link to="/react/conditionals">Conditionals</Link>
+              </li>
             </ul>
           </ul>
 
