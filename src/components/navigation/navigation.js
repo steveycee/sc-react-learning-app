@@ -29,6 +29,9 @@ function Navigation() {
               <li>
                 <Link to="/react/conditionals">Conditionals</Link>
               </li>
+              <li>
+                <Link to="/react/lists">Lists</Link>
+              </li>
             </ul>
           </ul>
 

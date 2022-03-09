@@ -17,9 +17,9 @@ function ElseCondition() {
   );
 }
 
-function Goal(props) {
-  const isGoal = props.isGoal;
-  if (isGoal) {
+function Result(props) {
+  const trueorfalse = props.trueorfalse;
+  if (trueorfalse) {
     return <IfCondition />;
   }
   return <ElseCondition />;
@@ -27,13 +27,13 @@ function Goal(props) {
 
 function IfElse() {
   // Required for Codeblock
-  const thisFile = require("!!raw-loader!./conditionals");
+  const thisFile = require("!!raw-loader!./ifelse");
 
   return (
     <>
-      <h2>Conditionals</h2>
+      <h2>If/Else Conditional</h2>
       <p>Test</p>
-      <Goal isGoal={false} />
+      <Result isGoal={false} />
       <StyledCodeBlock nameOfFunction="Conditionals" code={thisFile} />
     </>
   );
